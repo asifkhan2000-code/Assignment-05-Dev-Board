@@ -43,7 +43,8 @@
                     </h1>
                 </div>
                 <button
-                    class="bg-secondary text-white text-2xl p-4 rounded-lg font-medium"
+                    id="btn-to-desk"
+                    class="bg-secondary text-white text-xl p-3 rounded-lg font-medium cursor-pointer"
                 >
                     Back to Desk
                 </button>
@@ -52,19 +53,21 @@
         <main>
             <!-- main blog section -->
             <section>
-                <h1 class="text-primary text-center text-4xl font-bold mb-4">
+                <h1 class="text-primary text-center text-3xl font-bold mb-4">
                     Blogs
                 </h1>
                 <!-- question 1 -->
-                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                <div
+                    class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm"
+                >
                     <p
-                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                        class="text-primary font-bold text-xl p-2 border-b-2 border-dashed border-blue-200"
                     >
                         Question-1: What are the different ways to select an
                         element in the DOM?
                     </p>
                     <p
-                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                        class="text-primary font-medium text-xl p-2 text-justify opacity-80 mt-5"
                     >
                         In JavaScript, you can select DOM elements using methods
                         like getElementById() for selecting by ID,
@@ -77,15 +80,17 @@
                     </p>
                 </div>
                 <!-- question 2 -->
-                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                <div
+                    class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm"
+                >
                     <p
-                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                        class="text-primary font-bold text-xl p-2 border-b-2 border-dashed border-blue-200"
                     >
                         Question-2: What is the difference between innerHTML,
                         innerText, and textContent ?
                     </p>
                     <p
-                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                        class="text-primary font-medium text-xl p-2 text-justify opacity-80 mt-5"
                     >
                         innerHTML gets or sets the HTML inside an element,
                         including tags. innerText gets or sets only the visible
@@ -95,14 +100,16 @@
                     </p>
                 </div>
                 <!-- question 3 -->
-                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                <div
+                    class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm"
+                >
                     <p
-                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                        class="text-primary font-bold text-xl p-2 border-b-2 border-dashed border-blue-200"
                     >
                         Question-3: What is event delegation in the DOM?
                     </p>
                     <p
-                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                        class="text-primary font-medium text-xl p-2 text-justify opacity-80 mt-5"
                     >
                         Event delegation is a technique in the DOM where a
                         parent element handles events for its child elements.
@@ -113,31 +120,46 @@
                         handling dynamically added elements efficiently.
                     </p>
                 </div>
-                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                <div
+                    class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm"
+                >
                     <p
-                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                        class="text-primary font-bold text-xl p-2 border-b-2 border-dashed border-blue-200"
                     >
                         Question-4: What is event bubbling in the DOM?
                     </p>
                     <p
-                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                        class="text-primary font-medium text-xl p-2 text-justify opacity-80 mt-5"
                     >
-                    Event bubbling in the DOM is a phase where an event starts from the target element and propagates upward through its parent elements up to the root. For example, if you click a button inside a div, the click event first fires on the button, then on its parent div, and continues up the DOM tree. This behavior allows techniques like event delegation.
+                        Event bubbling in the DOM is a phase where an event
+                        starts from the target element and propagates upward
+                        through its parent elements up to the root. For example,
+                        if you click a button inside a div, the click event
+                        first fires on the button, then on its parent div, and
+                        continues up the DOM tree. This behavior allows
+                        techniques like event delegation.
                     </p>
                 </div>
-                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                <div
+                    class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm"
+                >
                     <p
-                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                        class="text-primary font-bold text-xl p-2 border-b-2 border-dashed border-blue-200"
                     >
-                    Question-5: How do you create, add, and remove elements using JavaScript?
+                        Question-5: How do you create, add, and remove elements
+                        using JavaScript?
                     </p>
                     <p
-                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                        class="text-primary font-medium text-xl p-2 text-justify opacity-80 mt-5"
                     >
-                    In JavaScript, you create elements with document.createElement(), add them using methods like appendChild(), append(), or insertBefore(), and remove them with removeChild() or remove().
+                        In JavaScript, you create elements with
+                        document.createElement(), add them using methods like
+                        appendChild(), append(), or insertBefore(), and remove
+                        them with removeChild() or remove().
                     </p>
                 </div>
             </section>
         </main>
+        <script src="js/toIndex.js"></script>
     </body>
 </html>

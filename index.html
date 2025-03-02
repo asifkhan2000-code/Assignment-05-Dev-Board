@@ -47,7 +47,7 @@
                         class="bg-background-primary flex items-center gap-4 p-2 rounded-xl"
                     >
                         <img src="assets/checkbox.png" alt="" />
-                        <p class="text-3xl text-primary font-bold">23</p>
+                        <p id="total-attempt" class="text-3xl text-primary font-bold">23</p>
                     </div>
                     <div
                         class="bg-background-primary rounded-full flex items-center justify-center p-3"
@@ -73,13 +73,13 @@
                             </div>
                             <div>
                                 <p class="text-primary">Task Assigned</p>
-                                <p class="text-primary font-bold text-3xl">
-                                    05
+                                <p id="total-task" class="text-primary font-bold text-3xl">
+                                    6
                                 </p>
                             </div>
                         </div>
-                        <div
-                            class="bg-gradient-to-r from-blue-500 to-violet-200 flex items-center gap-4 p-4 rounded-md shadow-sm flex-1"
+                        <div id="btn-to-blogs"
+                            class="bg-gradient-to-r from-blue-500 to-violet-200 flex items-center gap-4 p-4 rounded-md shadow-sm flex-1 cursor-pointer"
                         >
                             <img src="assets/board.png" alt="" />
                             <div>
@@ -95,7 +95,7 @@
                                 <img src="assets/calender.png" alt="" />
                             </div>
                             <div>
-                                <p class="text-primary text-2xl">Wed ,<br> <span class="font-bold">Jul 28 2025</span></p>
+                                <p class="text-primary text-xl font-bold" id="display-date"></p>
                             
                             </div>
                         </div>
@@ -111,12 +111,12 @@
                                 >ShopEase</span
                             >
                             <p
-                                class="text-primary text-xl font-medium mb-4 mt-6"
+                                class="text-primary text-xl font-medium mb-4 mt-6 card-title"
                             >
                                 Fix Mobile Button Issue
                             </p>
                             <p
-                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-70"
+                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-80"
                             >
                                 Debug using Chrome DevTools, check for
                                 overlapping elements, and ensure onClick works
@@ -130,7 +130,7 @@
                                     </p>
                                 </div>
                                 <button
-                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium"
+                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium btn-complete"
                                 >
                                     Completed
                                 </button>
@@ -145,12 +145,12 @@
                                 >CloudSync</span
                             >
                             <p
-                                class="text-primary text-xl font-medium mb-4 mt-6"
+                                class="text-primary text-xl font-medium mb-4 mt-6 card-title"
                             >
                                 Add Dark Mode
                             </p>
                             <p
-                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-70"
+                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-80"
                             >
                                 Store the user's preference in localStorage,
                                 update CSS variables dynamically, and apply a
@@ -164,7 +164,7 @@
                                     </p>
                                 </div>
                                 <button
-                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium"
+                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium btn-complete"
                                 >
                                     Completed
                                 </button>
@@ -179,12 +179,12 @@
                                 >SwiftPay</span
                             >
                             <p
-                                class="text-primary text-xl font-medium mb-4 mt-6"
+                                class="text-primary text-xl font-medium mb-4 mt-6 card-title"
                             >
                                 Optimize Home page
                             </p>
                             <p
-                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-70"
+                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-80"
                             >
                                 Debug using Chrome DevTools, check for
                                 overlapping elements, and ensure onClick works
@@ -198,7 +198,7 @@
                                     </p>
                                 </div>
                                 <button
-                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium"
+                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium btn-complete"
                                 >
                                     Completed
                                 </button>
@@ -213,12 +213,12 @@
                                 >Meta</span
                             >
                             <p
-                                class="text-primary text-xl font-medium mb-4 mt-6"
+                                class="text-primary text-xl font-medium mb-4 mt-6 card-title"
                             >
                                 Add new emoji 🤲
                             </p>
                             <p
-                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-70"
+                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-80"
                             >
                                 Debug using Chrome DevTools, check for
                                 overlapping elements, and ensure onClick works
@@ -232,7 +232,7 @@
                                     </p>
                                 </div>
                                 <button
-                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium"
+                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium btn-complete"
                                 >
                                     Completed
                                 </button>
@@ -247,12 +247,12 @@
                                 >Google LLC</span
                             >
                             <p
-                                class="text-primary text-xl font-medium mb-4 mt-6"
+                                class="text-primary text-xl font-medium mb-4 mt-6 card-title"
                             >
                                 Integrate OpenAI API
                             </p>
                             <p
-                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-70"
+                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-80"
                             >
                                 Debug using Chrome DevTools, check for
                                 overlapping elements, and ensure onClick works
@@ -266,7 +266,7 @@
                                     </p>
                                 </div>
                                 <button
-                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium"
+                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium btn-complete"
                                 >
                                     Completed
                                 </button>
@@ -281,12 +281,12 @@
                                 >Glassdoar</span
                             >
                             <p
-                                class="text-primary text-xl font-medium mb-4 mt-6"
+                                class="text-primary text-xl font-medium mb-4 mt-6 card-title"
                             >
                                 Improve Job searching
                             </p>
                             <p
-                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-70"
+                                class="truncate mb-4 text-tertiary bg-white p-4 rounded-md opacity-80"
                             >
                                 Debug using Chrome DevTools, check for
                                 overlapping elements, and ensure onClick works
@@ -300,7 +300,7 @@
                                     </p>
                                 </div>
                                 <button
-                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium"
+                                    class="p-3 bg-secondary rounded-md cursor-pointer text-white font-medium btn-complete"
                                 >
                                     Completed
                                 </button>
@@ -309,18 +309,23 @@
                     </div>
                 </div>
                 <!-- main section div2 -->
-                <div class="bg-white rounded-e-lg">
-                    <div class="flex justify-center pt-5 gap-2">
+                <div class="bg-white rounded-lg">
+                    <div class="flex justify-center items-center pt-5 gap-2">
                         <img src="assets/activity.png" alt="" />
                         <p class="text-primary font-medium text-xl">
                             Activity Log
                         </p>
                     </div>
                     <div class="text-center p-5 border-b-2 border-dashed border-blue-200">
-                        <button class="bg-secondary p-3 rounded-md text-white font-medium cursor-pointer">Clear History</button>
+                        <button id="btn-clear-history" class="bg-secondary p-3 rounded-md text-white font-medium cursor-pointer">Clear History</button>
                     </div>
+                    <p id="add-activity" class="mt-4 p-4"></p>
                 </div>
             </section>
         </main>
+        <script src="js/toBlogs.js"></script>
+        <script src="js/complete.js"></script>
+        <script src="js/displayDate.js"></script>
+        <script src="js/activity.js"></script>
     </body>
 </html>
