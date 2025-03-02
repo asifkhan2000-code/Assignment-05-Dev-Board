@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blogs</title>
+        <!-- google font cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font awesome cdn -->
+        <script
+            src="https://kit.fontawesome.com/5c47820a63.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- tailwind cdn -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <!-- tailwind custom css -->
+        <style type="text/tailwindcss">
+            @theme {
+                --font-poppins: Poppins, sans-serif;
+                --color-background-primary: #f4f7ff;
+                --color-primary: #00303c;
+                --color-secondary: #3752fd;
+                --color-tertiary: #000000;
+                --color-quaternary: #ffffff;
+            }
+        </style>
+    </head>
+    <body class="font-poppins bg-background-primary">
+        <header class="mt-6 mb-5">
+            <!-- navbar section -->
+            <nav
+                class="max-w-7xl mx-auto bg-white flex items-center justify-between rounded-lg p-4 shadow-sm"
+            >
+                <div class="flex items-center p-5 gap-2">
+                    <img src="assets/logo.png" alt="" class="w-10" />
+                    <h1 class="text-4xl text-primary">
+                        Dev<span class="font-bold">Board</span>
+                    </h1>
+                </div>
+                <button
+                    class="bg-secondary text-white text-2xl p-4 rounded-lg font-medium"
+                >
+                    Back to Desk
+                </button>
+            </nav>
+        </header>
+        <main>
+            <!-- main blog section -->
+            <section>
+                <h1 class="text-primary text-center text-4xl font-bold mb-4">
+                    Blogs
+                </h1>
+                <!-- question 1 -->
+                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                    <p
+                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                    >
+                        Question-1: What are the different ways to select an
+                        element in the DOM?
+                    </p>
+                    <p
+                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                    >
+                        In JavaScript, you can select DOM elements using methods
+                        like getElementById() for selecting by ID,
+                        getElementsByClassName() for class-based selection, and
+                        getElementsByTagName() for tag-based selection. More
+                        modern and flexible methods include querySelector(),
+                        which selects the first element matching a CSS selector,
+                        and querySelectorAll(), which selects all matching
+                        elements as a NodeList.
+                    </p>
+                </div>
+                <!-- question 2 -->
+                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                    <p
+                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                    >
+                        Question-2: What is the difference between innerHTML,
+                        innerText, and textContent ?
+                    </p>
+                    <p
+                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                    >
+                        innerHTML gets or sets the HTML inside an element,
+                        including tags. innerText gets or sets only the visible
+                        text, respecting CSS styles. textContent gets or sets
+                        all the text inside an element, ignoring HTML and CSS
+                        visibility.
+                    </p>
+                </div>
+                <!-- question 3 -->
+                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                    <p
+                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                    >
+                        Question-3: What is event delegation in the DOM?
+                    </p>
+                    <p
+                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                    >
+                        Event delegation is a technique in the DOM where a
+                        parent element handles events for its child elements.
+                        Instead of adding event listeners to multiple child
+                        elements, you add a single listener to their common
+                        parent. The event propagates up the DOM (bubbling), and
+                        the parent captures it, improving performance and
+                        handling dynamically added elements efficiently.
+                    </p>
+                </div>
+                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                    <p
+                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                    >
+                        Question-4: What is event bubbling in the DOM?
+                    </p>
+                    <p
+                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                    >
+                    Event bubbling in the DOM is a phase where an event starts from the target element and propagates upward through its parent elements up to the root. For example, if you click a button inside a div, the click event first fires on the button, then on its parent div, and continues up the DOM tree. This behavior allows techniques like event delegation.
+                    </p>
+                </div>
+                <div class="max-w-7xl mx-auto bg-white p-4 mb-5 rounded-lg shadow-sm">
+                    <p
+                        class="text-primary font-bold text-2xl p-2 border-b-2 border-dashed border-blue-200"
+                    >
+                    Question-5: How do you create, add, and remove elements using JavaScript?
+                    </p>
+                    <p
+                        class="text-primary font-medium text-2xl p-2 text-justify opacity-70 mt-5"
+                    >
+                    In JavaScript, you create elements with document.createElement(), add them using methods like appendChild(), append(), or insertBefore(), and remove them with removeChild() or remove().
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
